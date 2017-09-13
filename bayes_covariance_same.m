@@ -23,16 +23,28 @@ covariance_class_3 = covariance_calculate(data(2*class_rows+1:num_of_rows,:),mea
 gaussian_class_2 = calculate_gaussian(covariance_class_2,mean_class_2,data(class_rows+1:2*class_rows,:));
 gaussian_class_3 = calculate_gaussian(covariance_class_3,mean_class_3,data(2*class_rows+1:num_of_rows,:));
 
-clf
-x = linspace(-6,4,50);
-y = linspace(-5,5,50);
-p = [x',y'];
-z = calculate_gaussian(covariance_class_1,mean_class_1,p);
-xlabel('x');
-ylabel('y');
-zlabel('P');
+[x,y] = meshgrid(-5:0.2:5,-5:0.2:5);
+x1 = zeros(size(x,1) * size(x,1),1);
+y1 = x1;
+l = 1;
 
-plot3(x,y,z);
+for i=1:size(x,1)
+    for j=1:size(x,1)
+        x1(l,1) = x(i,j);
+        y1(l,1) = y(i,j);
+        l = l+1;
+    end
+end
+
+z1 = [x1,y1];
+z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
+z = vec2mat(z2,size(x,1));
+
+surf(x,y,z);
+
+
+
+
 
 
 %% Real data
