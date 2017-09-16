@@ -36,23 +36,39 @@ for i=1:size(x,1)
     end
 end
 
-
+% Surface1 and countour1
+figure(1);
 z1 = [x1,y1];
 clf;
-figure(1);
+
 z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
 z = vec2mat(z2,size(x,1));
 surf(x,y,z);
 hold on;
+[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+hContour.ContourZLevel = -0.1; % set the contour's Z position
+hold on;
 
+% Surface2 and countour2 
 z3 = calculate_gaussian(covariance_class_2,mean_class_2,z1);
 z = vec2mat(z3,size(x,1));
+[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+hContour.ContourZLevel = -0.1; % set the contour's Z position
 surf(x,y,z);
 hold on;
 
+% Surface3 and countour3
 z4 = calculate_gaussian(covariance_class_3,mean_class_3,z1);
 z = vec2mat(z4,size(x,1));
+[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+hContour.ContourZLevel = -0.1; % set the contour's Z position
 surf(x,y,z);
+
+title('Gaussian Surface & Contour');
+set(gca,'fontsize',18)
+xlabel('Feature 1');
+ylabel('Feature 2')
+zlabel('Probability');
 
 
 
