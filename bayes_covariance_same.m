@@ -1,6 +1,6 @@
 %%Linearly Seperable Data 
 
-%Read Linearly Seperable Data as a Matrix from text file
+%Read Real Data as a Matrix from text file
 data = load('3_ls.txt');
 
 % Calculate Mean and covariance for each class in data. First 500 rows
@@ -19,11 +19,8 @@ covariance_class_2 = covariance_calculate(data(class_rows+1:2*class_rows,:),mean
 covariance_class_3 = covariance_calculate(data(2*class_rows+1:num_of_rows,:),mean_class_3);
 
 % Plot the gaussian for all the three classes
-%gaussian_class_1 = calculate_gaussian(covariance_class_1,mean_class_1,data(1:training_rows,:));
-gaussian_class_2 = calculate_gaussian(covariance_class_2,mean_class_2,data(class_rows+1:2*class_rows,:));
-gaussian_class_3 = calculate_gaussian(covariance_class_3,mean_class_3,data(2*class_rows+1:num_of_rows,:));
 
-[x,y] = meshgrid(-8:.2:22,-15:.2:15);
+[x,y] = meshgrid(-10:.2:25,-15:.2:20);
 x1 = zeros(size(x,1) * size(x,1),1);
 y1 = x1;
 l = 1;
@@ -64,7 +61,7 @@ z = vec2mat(z4,size(x,1));
 hContour.ContourZLevel = -0.1; % set the contour's Z position
 surf(x,y,z);
 
-title('Gaussian Surface & Contour');
+title('Gaussian Surface & Contour - Linear');
 set(gca,'fontsize',18)
 xlabel('Feature 1');
 ylabel('Feature 2')
