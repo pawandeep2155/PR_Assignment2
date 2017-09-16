@@ -71,8 +71,8 @@ zlabel('Probability');
 
 
 
-%% Draw Confusion Matrix. Assume covariance of all class equal
-test_rows = uint16(class_rows * .3);
+%% Draw Confusion Curve, take covariance of 1 class 
+test_rows = uint16(num_of_rows * .3);
 w1actual = ones(test_rows,1);
 w2actual = 2*ones(test_rows,1);
 w3actual = 3*ones(test_rows,1);
@@ -81,24 +81,27 @@ wactual = vertcat(w1actual,w2actual,w3actual);
 
 test_data_1 = data(training_rows+1:training_rows+test_rows,:);
 test_data_2 = data(class_rows+training_rows+1:class_rows+training_rows + test_rows,:);
-test_data_3 = data(2*class_rows+training_rows+1:num_of_rows,:);
+test_data_3 = data(2*class_rows+training_rows+1:num_of_rows);
 
-test_data = vertcat(test_data_1,test_data_2,test_data_3);
+g1 = calculate_gix(test_data_1,covariance_class_1,mean_class_1);
+g2 = calculate_gix(test_data_2,covariance_class_1,mean_class_2);
+g3 = calculate_gix(test_data_3,covariance_class_1,mean_class_3);
 
-g1 = calculate_gix(test_data,covariance_class_1,mean_class_1);
-g2 = calculate_gix(test_data,covariance_class_1,mean_class_2);
-g3 = calculate_gix(test_data,covariance_class_1,mean_class_3);
+wpredicted = zeros(size(test_rows,1),1);
+gtemp = zeros(1,3);
 
-wpredicted = zeros(size(test_data,1),1);
-gtemp = zeros(3,1);
-
-for i=1:size(wpredicted,1)
-    gtemp = [g1(i);g2(i);g3(i)];
-    [M,I] = max(gtemp);
-    wpredicted(i) = I;
+for i=1:test_rows
+    gtemp = [g1(i) g2(i) g3(i)];
+    
 end
 
-c = confusionmat(wactual,wpredicted);
+
+
+
+
+
+
+
 
 
 
