@@ -23,7 +23,7 @@ covariance_class_3 = covariance_calculate(data(2*class_rows+1:num_of_rows,:),mea
 gaussian_class_2 = calculate_gaussian(covariance_class_2,mean_class_2,data(class_rows+1:2*class_rows,:));
 gaussian_class_3 = calculate_gaussian(covariance_class_3,mean_class_3,data(2*class_rows+1:num_of_rows,:));
 
-[x,y] = meshgrid(-5:0.2:5,-5:0.2:5);
+[x,y] = meshgrid(-8:.2:22,-15:.2:15);
 x1 = zeros(size(x,1) * size(x,1),1);
 y1 = x1;
 l = 1;
@@ -36,12 +36,23 @@ for i=1:size(x,1)
     end
 end
 
+
 z1 = [x1,y1];
+clf;
+figure(1);
 z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
 z = vec2mat(z2,size(x,1));
-
 surf(x,y,z);
+hold on;
 
+z3 = calculate_gaussian(covariance_class_2,mean_class_2,z1);
+z = vec2mat(z3,size(x,1));
+surf(x,y,z);
+hold on;
+
+z4 = calculate_gaussian(covariance_class_3,mean_class_3,z1);
+z = vec2mat(z4,size(x,1));
+surf(x,y,z);
 
 
 
