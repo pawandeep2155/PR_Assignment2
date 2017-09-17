@@ -20,53 +20,53 @@ covariance_class_3 = covariance_calculate(data(2*class_rows+1:num_of_rows,:),mea
 
 %% Plot the gaussian for all the three classes
 
-[x,y] = meshgrid(-10:.2:25,-15:.2:20);
-x1 = zeros(size(x,1) * size(x,1),1);
-y1 = x1;
-l = 1;
-
-for i=1:size(x,1)
-    for j=1:size(x,1)
-        x1(l,1) = x(i,j);
-        y1(l,1) = y(i,j);
-        l = l+1;
-    end
-end
-
+% [x,y] = meshgrid(-10:.2:25,-15:.2:20);
+% x1 = zeros(size(x,1) * size(x,1),1);
+% y1 = x1;
+% l = 1;
+% 
+% for i=1:size(x,1)
+%     for j=1:size(x,1)
+%         x1(l,1) = x(i,j);
+%         y1(l,1) = y(i,j);
+%         l = l+1;
+%     end
+% end
+% 
 % Surface1 and countour1
-figure(1);
-z1 = [x1,y1];
-clf;
-
-z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
-z = vec2mat(z2,size(x,1));
-surf(x,y,z);
-hold on;
-[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
-hContour.ContourZLevel = -0.1; % set the contour's Z position
-hold on;
-
+% figure(1);
+% z1 = [x1,y1];
+% clf;
+% 
+% z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
+% z = vec2mat(z2,size(x,1));
+% surf(x,y,z);
+% hold on;
+% [~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+% hContour.ContourZLevel = -0.1; % set the contour's Z position
+% hold on;
+% 
 % Surface2 and countour2 
-z3 = calculate_gaussian(covariance_class_2,mean_class_2,z1);
-z = vec2mat(z3,size(x,1));
-[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
-hContour.ContourZLevel = -0.1; % set the contour's Z position
-surf(x,y,z);
-hold on;
-
+% z3 = calculate_gaussian(covariance_class_2,mean_class_2,z1);
+% z = vec2mat(z3,size(x,1));
+% [~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+% hContour.ContourZLevel = -0.1; % set the contour's Z position
+% surf(x,y,z);
+% hold on;
+% 
 % Surface3 and countour3
-z4 = calculate_gaussian(covariance_class_3,mean_class_3,z1);
-z = vec2mat(z4,size(x,1));
-[~,hContour] = contourf(x,y,z,10,'edgecolor','white');
-hContour.ContourZLevel = -0.1; % set the contour's Z position
-surf(x,y,z);
-
-title('Gaussian Surface & Contour - Linear');
-set(gca,'fontsize',18)
-xlabel('Feature 1');
-ylabel('Feature 2')
-zlabel('Probability');
-
+% z4 = calculate_gaussian(covariance_class_3,mean_class_3,z1);
+% z = vec2mat(z4,size(x,1));
+% [~,hContour] = contourf(x,y,z,10,'edgecolor','white');
+% hContour.ContourZLevel = -0.1; % set the contour's Z position
+% surf(x,y,z);
+% 
+% title('Gaussian Surface & Contour - Linear');
+% set(gca,'fontsize',18)
+% xlabel('Feature 1');
+% ylabel('Feature 2')
+% zlabel('Probability');
+% 
 
 
 
@@ -98,7 +98,26 @@ for i=1:size(wpredicted,1)
     wpredicted(i) = I;
 end
 
-c = confusionmat(wactual,wpredicted);
+wactual = wactual';
+wpredicted = wpredicted';
+
+target = zeros(3,length(wactual));
+output = zeros(3,length(wactual));
+
+target_id = sub2ind(size(target), wactual, 1:length(wactual));
+output_id = sub2ind(size(output), wpredicted, 1:length(wactual));
+
+target(target_id) = 1;
+output(output_id) = 1;
+
+% Plot confusion matrix
+plotconfusion(target,output);
+xticklabels({'w1','w2','w3','score'});
+yticklabels({'w1','w2','w3','score'});
+set(gca,'fontsize',18);
+
+
+
 
 
 
