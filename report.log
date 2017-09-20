@@ -1,0 +1,377 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.13)  20 SEP 2017 23:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+) (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+[2]
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_linear.
+jpg, id=20, 2569.6pt x 1304.875pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_li
+near.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_lin
+ear.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+gaussian_surface_linear.jpg used on input line 40.
+(pdftex.def)             Requested size: 378.30048pt x 192.09904pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 41.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_non_lin
+.jpg, id=21, 2569.6pt x 1304.875pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_no
+n_lin.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_non
+_lin.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+gaussian_surface_non_lin.jpg used on input line 44.
+(pdftex.def)             Requested size: 378.30048pt x 192.09904pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_real.jp
+g, id=22, 2569.6pt x 1304.875pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_re
+al.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_rea
+l.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+gaussian_surface_real.jpg used on input line 48.
+(pdftex.def)             Requested size: 378.30048pt x 192.09904pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--50
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--50
+[]$
+ []
+
+
+Overfull \vbox (70.41713pt too high) has occurred while \output is active []
+
+
+[3 </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface_line
+ar.jpg> </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_surface
+_non_lin.jpg> </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/gaussian_s
+urface_real.jpg>]
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/LS_Contours_Case_1.jpg, 
+id=26, 562.1pt x 421.575pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/LS_Contours_Case_1.
+jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/LS_Contours_Case_1.j
+pg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+LS_Contours_Case_1.jpg used on input line 56.
+(pdftex.def)             Requested size: 195.0pt x 146.2476pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/RD_Contours_Case_1.jpg, 
+id=27, 2341.74875pt x 1756.5625pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/RD_Contours_Case_1.
+jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/RD_Contours_Case_1.j
+pg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+RD_Contours_Case_1.jpg used on input line 60.
+(pdftex.def)             Requested size: 195.0pt x 146.2637pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/NLS_Contours_Case_5.jpg,
+ id=28, 2341.74875pt x 1756.5625pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/NLS_Contours_Case_5
+.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/NLS_Contours_Case_5.
+jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+NLS_Contours_Case_5.jpg used on input line 64.
+(pdftex.def)             Requested size: 195.0pt x 146.2637pt.
+ [4 </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/LS_Contours_Case_1.j
+pg> </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/RD_Contours_Case_1.j
+pg> </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/NLS_Contours_Case_5.
+jpg>]
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_linear_
+cov_same.jpg, id=32, 2569.6pt x 1361.085pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_li
+near_cov_same.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_lin
+ear_cov_same.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+confusion_matrix_linear_cov_same.jpg used on input line 74.
+(pdftex.def)             Requested size: 390.0pt x 206.56308pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_non_lin
+ear_cov_same.jpg, id=33, 2569.6pt x 1361.085pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_no
+n_linear_cov_same.jpg Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_non
+_linear_cov_same.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+confusion_matrix_non_linear_cov_same.jpg used on input line 78.
+(pdftex.def)             Requested size: 390.0pt x 206.56308pt.
+ [5 </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confusion_matrix_lin
+ear_cov_same.jpg> </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/confus
+ion_matrix_non_linear_cov_same.jpg>]
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_linear.jpg, id=37, 2
+569.6pt x 1304.875pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_linear.jpg Grap
+hic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_linear.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+roc_linear.jpg used on input line 88.
+(pdftex.def)             Requested size: 272.99881pt x 138.61873pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_non_linear.jpg, id=3
+8, 2569.6pt x 1304.875pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_non_linear.jpg 
+Graphic file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_non_linear.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+roc_non_linear.jpg used on input line 92.
+(pdftex.def)             Requested size: 272.99881pt x 138.61873pt.
+
+</Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_real.jpg, id=39, 144
+5.4pt x 753.81625pt>
+File: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_real.jpg Graphi
+c file (type jpg)
+
+<use /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_real.jpg>
+Package pdftex.def Info: /Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/
+roc_real.jpg used on input line 96.
+(pdftex.def)             Requested size: 272.99881pt x 142.3754pt.
+
+[6 </Users/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_linear.jpg> </Use
+rs/pawandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_non_linear.jpg> </Users/p
+awandeepsingh/Desktop/PR_Assignment2/My_Plots/roc_real.jpg>]
+<Det_real.jpg, id=43, 1371.1225pt x 653.44125pt>
+File: Det_real.jpg Graphic file (type jpg)
+ <use Det_real.jpg>
+Package pdftex.def Info: Det_real.jpg used on input line 105.
+(pdftex.def)             Requested size: 350.99762pt x 167.2784pt.
+
+<det_non_lin.jpg, id=44, 1371.1225pt x 653.44125pt>
+File: det_non_lin.jpg Graphic file (type jpg)
+ <use det_non_lin.jpg>
+Package pdftex.def Info: det_non_lin.jpg used on input line 109.
+(pdftex.def)             Requested size: 350.99762pt x 167.2784pt.
+
+[7 <./Det_real.jpg> <./det_non_lin.jpg>] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 1652 strings out of 492995
+ 27103 string characters out of 6132704
+ 82902 words of memory out of 5000000
+ 5193 multiletter control sequences out of 15000+600000
+ 8501 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,7n,25p,371b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on report.pdf (7 pages, 2516964 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

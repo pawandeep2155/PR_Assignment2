@@ -1,7 +1,7 @@
 %% Find mean and covariance for all the three classes
 
 %Read Real Data as a Matrix from text file
-data = load('3_ls.txt');
+data = load('group_3.txt');
 
 % Calculate Mean and covariance for each class in data. First 500 rows
 % class w1 data, next 500 rows class w2 data, remaining 500 rows class w3
@@ -46,6 +46,7 @@ B1=inv(cov1)*u1;
 C1=-(0.5)*u1'*inv(cov1)*u1-0.5*log(det(cov1));
 u2=mean_DS(t2);
 cov2=covariance_calculate(t2,u2);
+%cov2=cov1;
 A2=-0.5*inv(cov2);
 B2=inv(cov2)*u2;
 C2=-(0.5)*u2'*inv(cov2)*u2-0.5*log(det(cov2));
@@ -61,25 +62,26 @@ B1=inv(cov1)*u1;
 C1=-(0.5)*u1'*inv(cov1)*u1-0.5*log(det(cov1));
 u2=mean_DS(t2);
 cov2=covariance_calculate(t2,u2);
+%cov2=cov1;
 A2=-0.5*inv(cov2);
 B2=inv(cov2)*u2;
 C2=-(0.5)*u2'*inv(cov2)*u2-0.5*log(det(cov2));
 f1=@(x,y) x.^2.*(A1(1,1)-A2(1,1))+y.^2.*(A1(2,2)-A2(2,2))+x.*y.*(A1(1,2)+A1(2,1)-A2(1,2)-A2(2,1))+x.*(B1(1,1)-B2(1,1))+y.*(B1(2,1)-B2(2,1))+C1-C2;
 
-%3 vs all
-t1=w3;
-t2=[w1;w2];
-u1=mean_DS(t1);
-cov1=covariance_calculate(t1,u1);
-A1=-0.5*inv(cov1);
-B1=inv(cov1)*u1;
-C1=-(0.5)*u1'*inv(cov1)*u1-0.5*log(det(cov1));
-u2=mean_DS(t2);
-cov2=covariance_calculate(t2,u2);
-A2=-0.5*inv(cov2);
-B2=inv(cov2)*u2;
-C2=-(0.5)*u2'*inv(cov2)*u2-0.5*log(det(cov2));
-f2=@(x,y) x.^2.*(A1(1,1)-A2(1,1))+y.^2.*(A1(2,2)-A2(2,2))+x.*y.*(A1(1,2)+A1(2,1)-A2(1,2)-A2(2,1))+x.*(B1(1,1)-B2(1,1))+y.*(B1(2,1)-B2(2,1))+C1-C2;
+% %3 vs all
+% t1=w3;
+% t2=[w1;w2];
+% u1=mean_DS(t1);
+% cov1=covariance_calculate(t1,u1);
+% A1=-0.5*inv(cov1);
+% B1=inv(cov1)*u1;
+% C1=-(0.5)*u1'*inv(cov1)*u1-0.5*log(det(cov1));
+% u2=mean_DS(t2);
+% cov2=covariance_calculate(t2,u2);cov2=cov1;
+% A2=-0.5*inv(cov2);
+% B2=inv(cov2)*u2;
+% C2=-(0.5)*u2'*inv(cov2)*u2-0.5*log(det(cov2));
+% f2=@(x,y) x.^2.*(A1(1,1)-A2(1,1))+y.^2.*(A1(2,2)-A2(2,2))+x.*y.*(A1(1,2)+A1(2,1)-A2(1,2)-A2(2,1))+x.*(B1(1,1)-B2(1,1))+y.*(B1(2,1)-B2(2,1))+C1-C2;
 
 [x,y] = meshgrid(-10:.2:25,-15:.2:20);
 x1 = zeros(size(x,1) * size(x,1),1);
@@ -97,19 +99,20 @@ end
 z1 = [x1,y1];
 z2 = calculate_gaussian(covariance_class_1,mean_class_1,z1);
 z = vec2mat(z2,size(x,1));
-contour(x,y,z,'LineWidth',4);
+%contour(x,y,z,'LineWidth',4);
 hold on;
 z3 = calculate_gaussian(covariance_class_2,mean_class_2,z1);
 z = vec2mat(z3,size(x,1));
-contour(x,y,z,'LineWidth',4);
+%contour(x,y,z,'LineWidth',4);
 
 z4 = calculate_gaussian(covariance_class_3,mean_class_3,z1);
 z = vec2mat(z4,size(x,1));
-contour(x,y,z,'LineWidth',4);
+%contour(x,y,z,'LineWidth',4);
 
+%fimplicit(f,'LineWidth',2);
 fimplicit(f,'LineWidth',2);
 fimplicit(f1,'LineWidth',2);
-fimplicit(f2,'LineWidth',2);
+%fimplicit(f2,'LineWidth',2);
 h1 = scatter(w1(:,1),w1(:,2),25,'filled');
 h2 = scatter(w2(:,1),w2(:,2),25,'filled');
 h3 = scatter(w3(:,1),w3(:,2),25,'filled');
